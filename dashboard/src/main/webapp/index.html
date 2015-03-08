@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html>      
-	<head>
-		<title>HP Indigo Print Care</title>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		
-		<!--  Scripts required for Angular JS -->
-		<script type="text/javascript" src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/dashboard/javascript/libraries/angular.min.js"></script>
-		
-		<script src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
-		
-	    <link rel="stylesheet" type="text/css" href="/dashboard/css/mainpage.css">
-	    
-	</head>
-	<body>
+<html>
+<head>
+<title>HP Indigo Print Care</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!--  Scripts required for Angular JS -->
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/angular.min.js"></script>
+
+<script
+	src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css"
+	href="/dashboard/css/mainpage.css">
+
+</head>
+<body>
 	<div id="hubble" class="hubble">
 		<div id="header" class="header">
 			<div class="indigo_logo">
-				<img class="indigo_img" src="/dashboard/images/HP-Indigo-10000.png" alt="">
+				<img class="indigo_img" src="/dashboard/images/HP-Indigo-10000.png"
+					alt="">
 			</div>
 			<span class="header_text">HP Indigo Printer Care</span>
 		</div>
+		<div class="content">
+			<div class="tabs">
+				<ul class="tab-links">
+					<li class="active"><a href="#daily">Daily</a></li>
+					<li><a href="#weekly">Weekly</a></li>
+					<li><a href="#monthly">Monthly</a></li>
+					<li><a href="#annually">Annually</a></li>
+					<li><a href="#overdue">Overdue</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="daily" class="tab active">
+						<p>This is daily tab</p>
+					</div>
+
+					<div id="weekly" class="tab">
+						<p>This is weekly tab</p>
+					</div>
+
+					<div id="monthly" class="tab">
+						<p>This is monthly tab</p>
+					</div>
+
+					<div id="annually" class="tab">
+						<p>This is annual</p>
+					</div>
+					
+					<div id="overdue" class="tab">
+						<p>This is overdue tab</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="footer" class="footer">
-			<p class="copyright">© 2015 Hewlett-Packard Development Company, L.P.</p>
+			<p class="copyright">© 2015 Hewlett-Packard Development Company,
+				L.P.</p>
 		</div>
 	</div>
-	</body>
+</body>
 </html>
 
