@@ -1,0 +1,37 @@
+.header {
+    background-color: #0096d6;
+    height: 108px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.header .indigo_img {
+    float: left;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 50px;
+    height: auto;
+    line-height: 50px;
+    margin: 10px 0 0 9px;
+    width: 138px;
+}
+.header_text{
+	color:"#FFFFFF";
+}
+
+.footer {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-family: HPSimplified,Arial;
+    text-align: center;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 4px;
+}
+.header, .footer {
+    font-family: HPSimplified,Arial;
+}
