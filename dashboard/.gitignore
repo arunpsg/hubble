@@ -1,0 +1,12 @@
+/target
+/.project
+/.classpath
+/.settings
+/pom.xml.releaseBackup
+/release.properties
+*.iml
+*.ipr
+*.iws
+Servers
+/.externalToolBuilders
+/.idea
