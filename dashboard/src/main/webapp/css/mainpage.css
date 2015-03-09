@@ -15,7 +15,7 @@
 	height: auto;
 	line-height: 50px;
 	margin: 0px;
-	width: 224px;
+	width: 216px;
 }
 
 .header_text {
@@ -27,64 +27,25 @@
 }
 
 /*----- Content ---*/
-.content{
-	height:500px;
+.content {
+	height: 500px;
+	margin-left: 10px;
+	margin-top: 14px;
 }
-
-/*----- Tabs -----*/
-.tabs {
-	width: 100%;
-	display: inline-block;
+.tabbable {
+    margin: 10px;
+    height: 500px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
 }
-
-/*----- Tab Links -----*/
-.tab-links:after {
-	display: block;
-	clear: both;
-	content: '';
-}
-
-.tab-links li {
-	margin: 0px 5px;
-	float: left;
-	list-style: none;
-}
-
-.tab-links a {
-	background: none repeat scroll 0 0 #006699;
-    border-radius: 4px 4px 0 0;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 9px 19px;
-    text-decoration: none;
-    transition: all 0.15s linear 0s;
-}
-
-.tab-links a:hover {
-	background: #6699CC;
-	text-decoration: none;
-}
-
-li.active a, li.active a:hover {
-	background: #6699CC;
-	color: #FFFFFF;
-}
-
-/*----- Content of Tabs -----*/
 .tab-content {
-	padding: 15px;
-	border-radius: 3px;
-	background: #fff;
+    height: 100%; 
+    border-left: 1px solid #ccc ; 
+    border-right: 1px solid #ccc;
+    overflow:auto;
 }
-
-.tab {
-	display: none;
-}
-
-.tab.active {
-	display: block;
+.tab-content > .tab-content{
+	overflow:hidden;
 }
 
 /*-------footer -----*/

@@ -6,58 +6,228 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 <!--  Scripts required for Angular JS -->
-<script type="text/javascript"
-	src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
-<script type="text/javascript"
-	src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
-<script type="text/javascript"
-	src="/dashboard/javascript/libraries/angular.min.js"></script>
+<script type="text/javascript" src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dashboard/javascript/libraries/angular.min.js"></script>
 
-<script
-	src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
 
-<link rel="stylesheet" type="text/css"
-	href="/dashboard/css/mainpage.css">
+<link rel="stylesheet" type="text/css" href="/dashboard/css/mainpage.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 </head>
 <body>
 	<div id="hubble" class="hubble">
 		<div id="header" class="header">
 			<div class="indigo_logo">
-				<img class="indigo_img" src="/dashboard/images/HP-Indigo-10000.png"
+				<img class="indigo_img" src="/dashboard/images/indigo_logo.png"
 					alt="">
 			</div>
-			<span class="header_text">HP Indigo Printer Care</span>
+			<span class="header_text">HP IHPS diagnostic and maintenance
+				tool</span>
 		</div>
 		<div class="content">
-			<div class="tabs">
-				<ul class="tab-links">
-					<li class="active"><a href="#daily">Daily</a></li>
-					<li><a href="#weekly">Weekly</a></li>
-					<li><a href="#monthly">Monthly</a></li>
-					<li><a href="#annually">Annually</a></li>
-					<li><a href="#overdue">Overdue</a></li>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a>Maintenance Routines</a></li>
+					<li id="linktab2" onclick="changeTab('tab2')"><a>Print Quality Assist</a></li>
+					<li id="linktab3" onclick="changeTab('tab3')"><a>Advanced Diagnostics</a></li>
 				</ul>
-
 				<div class="tab-content">
-					<div id="daily" class="tab active">
-						<p>This is daily tab</p>
+					<div id="tab1" class="tab-pane active">
+						<ul class="nav nav-tabs">
+							<li id="linksubtab1" class="active" onclick="changeSubTab('subtab1')"><a>Daily</a></li>
+							<li id="linksubtab2" onclick="changeSubTab('subtab2')"><a>Weekly</a></li>
+							<li id="linksubtab3" onclick="changeSubTab('subtab3')"><a>Monthly</a></li>
+							<li id="linksubtab4" onclick="changeSubTab('subtab4')"><a>Annually</a></li>
+							<li id="linksubtab5" onclick="changeSubTab('subtab5')"><a>Overdue</a></li>
+						</ul>
 					</div>
-
-					<div id="weekly" class="tab">
-						<p>This is weekly tab</p>
+					<div id="tab2" class="tab-pane">
+						<br>
+							<p>Page under construction</p>
 					</div>
-
-					<div id="monthly" class="tab">
-						<p>This is monthly tab</p>
+					<div id="tab3" class="tab-pane">
+						<br>
+							<p>Page under construction</p>
 					</div>
-
-					<div id="annually" class="tab">
-						<p>This is annual</p>
-					</div>
-					
-					<div id="overdue" class="tab">
-						<p>This is overdue tab</p>
+					<div class="tab-content">
+						<div id="subtab1" class="tab-pane active">
+							<br>
+							<div class="daily-accordion">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseOne">Inspect</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>
+													IDS and Web Wipe Cassettes
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="subtab2" class="tab-pane">
+						<br>
+							<div class="weekly-accordion">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseWeeklyInsp">Inspect</a>
+											</h4>
+										</div>
+										<div id="collapseWeeklyInsp" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>
+													1) Press Exhaust Parameters
+												</p>
+												<p>
+													2) Ink Delivery System (IDS) Ink Pressures with Pumps Off
+												</p>
+												<p>
+													3) BA Print Bars for Leaks
+												</p>
+												<p>
+													4) Vent Lines for Blockages
+												</p>
+												<p>
+													5) IDS Ink Trap
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseWeeklyClean">Clean</a>
+											</h4>
+										</div>
+										<div id="collapseWeeklyClean" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>
+													1) Bottom of the Print Bars and Check Cap Plates
+												</p>
+												<p>
+													2) Antistatic Bar
+												</p>
+												<p>
+													3) IDS Ink Trap
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="subtab3" class="tab-pane">
+						<br>
+							<div class="monthly-accordion">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseMonthlyInsp">Inspect</a>
+											</h4>
+										</div>
+										<div id="collapseMonthlyInsp" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>
+													1) Rollers
+												</p>
+												<p>
+													2) Nip Rollers
+												</p>
+												<p>
+													3) IPC Rollers, and Line Light
+												</p>
+												<p>
+													4) Dryer Chamber
+												</p>
+												<p>
+													5) BA Aerosol Duct
+												</p>
+												<p>
+													6) Aerosol Filter and Housing
+												</p>
+												<p>
+													7) DFE Rack for Component Warnings
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseMonthlyClean">Clean</a>
+											</h4>
+										</div>
+										<div id="collapseMonthlyClean" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>
+													1) Rollers
+												</p>
+												<p>
+													2) Nip Rollers
+												</p>
+												<p>
+													3) IPC Rollers, and Line Light
+												</p>
+												<p>
+													4) Dryer Chamber
+												</p>
+												<p>
+													5) BA Aerosol Duct
+												</p>
+												<p>
+													6) Aerosol Filter and Housing
+												</p>
+												<p>
+													7) Air Filters
+												</p>
+												<p>
+													8) Rollers to Remove Oil from Bearings
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="subtab4" class="tab-pane">
+						<br>
+							<div class="annual-accordion">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion"
+													href="#collapseAnnualInsp">Inspect</a>
+											</h4>
+										</div>
+										<div id="collapseAnnualInsp" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>
+													1) Corrosion and remove it
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -69,4 +239,23 @@
 	</div>
 </body>
 </html>
+
+<script>
+	function changeTab(tabId) {
+		$('.tab-content > div').removeClass('active');
+		$('.nav-tabs > li').removeClass('active');
+		$('#'+tabId).addClass('active');
+		$('#link'+tabId).addClass('active');
+		if(tabId === 'tab1'){
+			changeSubTab('subtab1');
+		}
+	};
+	
+	function changeSubTab(subTabId){
+		$('.tab-content > .tab-content > div').removeClass('active');
+		$('.tab-content >#tab1 >.nav-tabs >li').removeClass('active');
+		$('#'+subTabId).addClass('active');
+		$('#link'+subTabId).addClass('active');
+	}
+</script>
 
