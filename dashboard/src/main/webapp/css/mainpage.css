@@ -65,3 +65,6 @@
 .header, .footer, .content {
 	font-family: HPSimplified, Arial;
 }
+.boldfont{
+	font-size:16px;
+}
