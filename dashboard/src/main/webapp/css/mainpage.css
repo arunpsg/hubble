@@ -46,6 +46,18 @@
 .tab-image{
 	 margin-right: 5px;
 }
+.work-progress{
+	margin-left: 20px;
+    margin-right: 15px;
+}
+.video{
+   float: right;
+    margin-right: 900px;
+}
+.help{
+	 float: right;
+    margin-right: -45px;
+}
 
 /*-------footer -----*/
 .footer {
