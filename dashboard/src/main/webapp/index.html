@@ -30,18 +30,18 @@
 		<div class="content">
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a class="boldfont">Maintenance Routines</a></li>
-					<li id="linktab2" onclick="changeTab('tab2')"><a class="boldfont">Print Quality Assist</a></li>
-					<li id="linktab3" onclick="changeTab('tab3')"><a class="boldfont">Advanced Diagnostics</a></li>
+					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Maintenance Routines</a></li>
+					<li id="linktab2" onclick="changeTab('tab2')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Print Quality Assist</a></li>
+					<li id="linktab3" onclick="changeTab('tab3')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Advanced Diagnostics</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="tab1" class="tab-pane active">
 						<ul class="nav nav-tabs">
-							<li id="linksubtab1" class="active" onclick="changeSubTab('subtab1')"><a class="boldfont">Daily</a></li>
-							<li id="linksubtab2" onclick="changeSubTab('subtab2')"><a class="boldfont">Weekly</a></li>
-							<li id="linksubtab3" onclick="changeSubTab('subtab3')"><a class="boldfont">Monthly</a></li>
-							<li id="linksubtab4" onclick="changeSubTab('subtab4')"><a class="boldfont">Yearly</a></li>
-							<li id="linksubtab5" onclick="changeSubTab('subtab5')"><a class="boldfont">Overdue</a></li>
+							<li id="linksubtab1" class="active" onclick="changeSubTab('subtab1')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Daily</a></li>
+							<li id="linksubtab2" onclick="changeSubTab('subtab2')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Weekly</a></li>
+							<li id="linksubtab3" onclick="changeSubTab('subtab3')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Monthly</a></li>
+							<li id="linksubtab4" onclick="changeSubTab('subtab4')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Yearly</a></li>
+							<li id="linksubtab5" onclick="changeSubTab('subtab5')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Overdue</a></li>
 						</ul>
 					</div>
 					<div id="tab2" class="tab-pane">
@@ -78,11 +78,11 @@
 						<div id="subtab2" class="tab-pane">
 						<br>
 							<div class="weekly-accordion">
-								<div class="panel-group" id="accordion">
+								<div class="panel-group" id="accordion-weekly">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion"
+												<a data-toggle="collapse" data-parent="#accordion-weekly"
 													href="#collapseWeeklyInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
@@ -109,7 +109,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion"
+												<a data-toggle="collapse" data-parent="#accordion-weekly"
 													href="#collapseWeeklyClean"><b>Clean</b></a>
 											</h4>
 										</div>
@@ -133,11 +133,11 @@
 						<div id="subtab3" class="tab-pane">
 						<br>
 							<div class="monthly-accordion">
-								<div class="panel-group" id="accordion">
+								<div class="panel-group" id="accordion-monthly">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion"
+												<a data-toggle="collapse" data-parent="#accordion-monthly"
 													href="#collapseMonthlyInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
@@ -170,7 +170,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion"
+												<a data-toggle="collapse" data-parent="#accordion-monthly"
 													href="#collapseMonthlyClean"><b>Clean</b></a>
 											</h4>
 										</div>
@@ -209,11 +209,11 @@
 						<div id="subtab4" class="tab-pane">
 						<br>
 							<div class="annual-accordion">
-								<div class="panel-group" id="accordion">
+								<div class="panel-group" id="accordion-yearly">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion"
+												<a data-toggle="collapse" data-parent="#accordion-yearly"
 													href="#collapseAnnualInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
