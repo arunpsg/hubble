@@ -10,14 +10,23 @@
 <script type="text/javascript" src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
 <script type="text/javascript" src="/dashboard/javascript/libraries/angular.min.js"></script>
 
+<script type="text/javascript" src="/dashboard/javascript/app.js"></script>
+
 <script src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/dashboard/css/mainpage.css">
+<link rel="stylesheet" type="text/css" href="/dashboard/css/global.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+
 </head>
 <body ng-controller="dashController">
+
+<div ng-show="showVideo" videocontent></div>
+<div ng-show="showHelp"  helpcontent></div>
+
+
 	<div id="hubble" class="hubble">
 		<div class="container-fluid">
 			<div id="header" class="header">
@@ -68,12 +77,20 @@
 										<div id="collapseOne" class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													IDS and Web Wipe Cassettes <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+													<span class="notes glyphicon glyphicon-comment"></span> 
+													<span class="work-progress glyphicon glyphicon-check pointer"  markable></span>
+													<span class="taskName">IDS and Web Wipe Cassettes</span> 
+													<span class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> 
+													<span class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('content 1')"></span>
 												</p>
+												<p>
+													<span class="notes glyphicon glyphicon-comment"></span> 
+													<span class="work-progress glyphicon glyphicon-check pointer"  markable></span>
+													<span class="taskName">IDS and Web tyy Cassettes</span> 
+													<span class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('456')"></span> 
+													<span class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('content 2')"></span>
+												</p>
+												
 											</div>
 										</div>
 									</div>
@@ -94,39 +111,39 @@
 										<div id="collapseWeeklyInsp" class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Press Exhaust Parameters <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+													<span class="notes glyphicon glyphicon-comment"></span> 
+													<span class="work-progress glyphicon glyphicon-check pointer"  markable></span>
+													<span class="taskName">Press Exhaust Parameters</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Ink Delivery System (IDS) Ink Pressures with Pumps Off <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Ink Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span> BA
-													Print Bars for Leaks <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span> 
+														<span class="taskName">BA Print Bars for Leaks</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Vent Lines for Blockages <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Vent Lines for Blockages </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													IDS Ink Trap <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">IDS Ink Trap </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -142,24 +159,24 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Bottom of the Print Bars and Check Cap Plates <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Bottom of the Print Bars and Check Cap Plates </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Antistatic Bar <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Antistatic Bar</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													IDS Ink Trap <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">IDS Ink Trap </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -182,52 +199,52 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Rollers <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Rollers </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Nip Rollers <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Nip Rollers </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													IPC Rollers, and Line Light <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">IPC Rollers, and Line Light</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Dryer Chamber <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Dryer Chamber</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span> BA
-													Aerosol Duct <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span> 
+														<span class="taskName">BA Aerosol Duct </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Aerosol Filter and Housing <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Aerosol Filter and Housing </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													DFE Rack for Component Warnings <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">DFE Rack for Component Warnings</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -243,59 +260,59 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Rollers <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Rollers</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Nip Rollers <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Nip Rollers</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													IPC Rollers, and Line Light <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">IPC Rollers, and Line Light</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Dryer Chamber <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Dryer Chamber</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span> BA
-													Aerosol Duct <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span> 
+														<span class="taskName">BA Aerosol Duct </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Aerosol Filter and Housing <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Aerosol Filter and Housing</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Air Filters <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Air Filters </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Rollers to Remove Oil from Bearings <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Rollers to Remove Oil from Bearings</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -318,10 +335,10 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-check"></span>
-													Corrosion and remove it <span
-														class="video glyphicon glyphicon-facetime-video"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign"></span>
+														class="work-progress glyphicon glyphicon-check  pointer"  markable></span>
+													<span class="taskName">Corrosion and remove it </span><span
+														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
