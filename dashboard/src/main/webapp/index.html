@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="formApp">
 <head>
 <title>HP Indigo Print Care</title>
 
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 </head>
-<body>
+<body ng-controller="dashController">
 	<div id="hubble" class="hubble">
 		<div class="container-fluid">
 			<div id="header" class="header">
@@ -61,7 +61,8 @@
 										<div class="panel-heading">
 											<h4 class="panel-title">
 												<a data-toggle="collapse" data-parent="#accordion"
-													href="#collapseOne"><b>Inspect</b></a>
+													href="#collapseOne"><b>Inspect</b>
+													</a>
 											</h4>
 										</div>
 										<div id="collapseOne" class="panel-collapse collapse in">
