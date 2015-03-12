@@ -71,14 +71,14 @@ app.directive("markable", function() {
             	
             	if(elem.hasClass('toggleColor')){
             		elem.removeClass("toggleColor");
-            		elem.removeClass("glyphicon-unchecked");
+            		elem.removeClass("glyphicon-check");
             		elem.addClass("glyphicon-unchecked");            		
                     elem.parent().find(".taskName").removeClass("toggleColor");
             	}
             	else{
             		elem.addClass("toggleColor");
             		elem.removeClass("glyphicon-unchecked");
-            		elem.addClass("glyphicon-unchecked");            		
+            		elem.addClass("glyphicon-check");            		
                     elem.parent().find(".taskName").addClass("toggleColor");
             	}
                 
