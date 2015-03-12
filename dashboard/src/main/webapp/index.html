@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="formApp">
 <head>
-<title>HP Indigo Print Care</title>
+<title>HP IHPS</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 <!--  Scripts required for Angular JS -->
-<script type="text/javascript" src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
-<script type="text/javascript" src="/dashboard/javascript/libraries/angular.min.js"></script>
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="/dashboard/javascript/libraries/angular.min.js"></script>
 
 <script type="text/javascript" src="/dashboard/javascript/app.js"></script>
 
-<script src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script
+	src="/dashboard/javascript/libraries/ui-bootstrap-tpls-0.10.0.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/dashboard/css/mainpage.css">
+<link rel="stylesheet" type="text/css"
+	href="/dashboard/css/mainpage.css">
 <link rel="stylesheet" type="text/css" href="/dashboard/css/global.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 
 </head>
 <body ng-controller="dashController">
 
-<div ng-show="showVideo" videocontent></div>
-<div ng-show="showHelp"  helpcontent></div>
+	<div ng-show="showVideo" videocontent></div>
+	<div ng-show="showHelp" helpcontent></div>
 
 
 	<div id="hubble" class="hubble">
@@ -39,94 +46,91 @@
 			</div>
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
-					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Maintenance Routines</a></li>
-					<li id="linktab2" onclick="changeTab('tab2')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Print Quality Assist</a></li>
-					<li id="linktab3" onclick="changeTab('tab3')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Advanced Diagnostics</a></li>
-					<li id="linktab4" onclick="changeTab('tab4')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span> Context Sensitive Help</a></li>
+					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a
+						class="boldfont"><span
+							class="tab-image glyphicon glyphicon-th-list"></span>Maintenance
+							Routines</a></li>
+					<li id="linktab2" onclick="changeTab('tab2')"><a
+						class="boldfont"><span
+							class="tab-image glyphicon glyphicon-th-list"></span>Print
+							Quality Assist</a></li>
+					<li id="linktab3" onclick="changeTab('tab3')"><a
+						class="boldfont"><span
+							class="tab-image glyphicon glyphicon-th-list"></span>Advanced
+							Diagnostics</a></li>
+					<li id="linktab4" onclick="changeTab('tab4')"><a
+						class="boldfont"><span
+							class="tab-image glyphicon glyphicon-th-list"></span> Context
+							Sensitive Help</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="tab1" class="tab-pane active">
 						<ul class="nav nav-tabs">
-							<li id="linksubtab1" class="active" onclick="changeSubTab('subtab1')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Daily</a></li>
-							<li id="linksubtab2" onclick="changeSubTab('subtab2')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Weekly</a></li>
-							<li id="linksubtab3" onclick="changeSubTab('subtab3')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Monthly</a></li>
-							<li id="linksubtab4" onclick="changeSubTab('subtab4')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Yearly</a></li>
-							<li id="linksubtab5" onclick="changeSubTab('subtab5')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-calendar"></span>Overdue</a></li>
+							<li id="linksubtab1" class="active"
+								onclick="changeSubTab('subtab1')"><a class="boldfont"><span
+									class="tab-image glyphicon glyphicon-calendar"></span>Daily</a></li>
+							<li id="linksubtab2" onclick="changeSubTab('subtab2')"><a
+								class="boldfont"><span
+									class="tab-image glyphicon glyphicon-calendar"></span>Weekly</a></li>
+							<li id="linksubtab3" onclick="changeSubTab('subtab3')"><a
+								class="boldfont"><span
+									class="tab-image glyphicon glyphicon-calendar"></span>Monthly</a></li>
+							<li id="linksubtab4" onclick="changeSubTab('subtab4')"><a
+								class="boldfont"><span
+									class="tab-image glyphicon glyphicon-calendar"></span>Yearly</a></li>
+							<li id="linksubtab5" onclick="changeSubTab('subtab5')"><a
+								class="boldfont"><span
+									class="tab-image glyphicon glyphicon-calendar"></span>Overdue</a></li>
 						</ul>
 					</div>
 					<div id="tab2" class="tab-pane">
 						<br>
-							<p>Page under construction</p>
+						<p>Page under construction</p>
 					</div>
 					<div id="tab3" class="tab-pane">
 						<br>
-							<p>Page under construction</p>
+						<p>Page under construction</p>
 					</div>
 					<div id="tab4" class="tab-pane">
-						<iframe class="help-tab" src="http://www8.hp.com/us/en/privacy/terms-of-use.html"></iframe>
+						<iframe class="help-tab"
+							src="http://www8.hp.com/us/en/privacy/terms-of-use.html"></iframe>
 					</div>
 					<div class="tab-content">
-						<div class="container">
-      					
-    </div>
+						<div class="container"></div>
 						<div id="subtab1" class="tab-pane active">
-						
-	<!-- 						<p class= "linking">
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Cleaning Station
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')"> Charge Roller
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Heating and Ventilation
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Impression Drum
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        
-      </p> 
-	 -->
-	 <my-tabs>
-	 <div id="crumbs">
-	 <ul>
-  		<my-pane title="Cleaning Station">
-           <li><a href="#1" onclick="listJobs('collapseOne')">Cleaning Station</a></li> </my-pane>
-           <my-pane title = "Charge Roller">
-                <li><a href="#2" onclick="listJobs('collapseOne')">Charge Roller</a></li> </my-pane>
-             </my-pane title="Heating and Ventilation">  <li><a href="#3" onclick="listJobs('collapseOne')">Heating and Ventilation</a></li> </my-pane>
-                </my-pane title="Impression Drum" ><li><a href="#4" onclick="listJobs('collapseOne')">Impression Drum</a></li> </my-pane>
-        
-		</div>
- 
-</my-tabs>
-	 
-	 <div id="crumbs">
-        <ul>
-                <li><a href="#1" onclick="listJobs('collapseOne')">Cleaning Station</a></li>
-                <li><a href="#2" onclick="listJobs('collapseOne')">Charge Roller</a></li>
-                <li><a href="#3" onclick="listJobs('collapseOne')">Heating and Ventilation</a></li>
-                <li><a href="#4" onclick="listJobs('collapseOne')">Impression Drum</a></li>
-        </ul>
-		</div>
-								<div class="daily-accordion">
+
+							<div id="crumbs">
+								<ul>
+									<li><a href="#1" onclick="listJobs('collapseOne')">Cleaning
+											Station</a></li>
+									<li><a href="#2" onclick="listJobs('collapseOne')">Charge
+											Roller</a></li>
+									<li><a href="#3" onclick="listJobs('collapseOne')">Heating
+											and Ventilation</a></li>
+									<li><a href="#4" onclick="listJobs('collapseOne')">Impression
+											Drum</a></li>
+								</ul>
+							</div>
+							<div class="daily-accordion">
 								<div class="panel-group" id="accordion">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h4 class="panel-title">
 												<a data-toggle="collapse" data-parent="#accordion"
-													href="#collapseOne"><b>Inspect</b>
-													</a>
+													href="#collapseOne"><b>Inspect</b> </a>
 											</h4>
 										</div>
 										<div id="collapseOne" class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> 
-													<span class="work-progress glyphicon glyphicon-unchecked pointer"  markable></span>
-													<span class="taskName">IDS and Web Wipe Cassettes</span> 
-													<span class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> 
-													<span class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('content 1')"></span>
+													<span class="notes glyphicon glyphicon-comment"></span> <span
+														class="work-progress glyphicon glyphicon-unchecked pointer"
+														markable></span> <span class="taskName">IDS and Web
+														Wipe Cassettes</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('content 1')"></span>
 												</p>
 											</div>
 										</div>
@@ -135,29 +139,19 @@
 							</div>
 						</div>
 						<div id="subtab2" class="tab-pane">
-		<!-- 				<p class= "linking">
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Cleaning Station
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')"> Charge Roller
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Heating and Ventilation
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Impression Drum
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        
-      </p>  -->
-      <div id="crumbs">
-        <ul>
-                <li><a href="#1" onclick="listJobs('collapseWeeklyInsp')">Cleaning Station</a></li>
-                <li><a href="#2" onclick="listJobs('collapseWeeklyInsp')">Charge Roller</a></li>
-                <li><a href="#3" onclick="listJobs('collapseWeeklyInsp')">Heating and Ventilation</a></li>
-                <li><a href="#4" onclick="listJobs('collapseWeeklyInsp')">Impression Drum</a></li>
-        </ul>
-	</div>
+							
+							<div id="crumbs">
+								<ul>
+									<li><a href="#1" onclick="listJobs('collapseWeeklyInsp')">Cleaning
+											Station</a></li>
+									<li><a href="#2" onclick="listJobs('collapseWeeklyInsp')">Charge
+											Roller</a></li>
+									<li><a href="#3" onclick="listJobs('collapseWeeklyInsp')">Heating
+											and Ventilation</a></li>
+									<li><a href="#4" onclick="listJobs('collapseWeeklyInsp')">Impression
+											Drum</a></li>
+								</ul>
+							</div>
 							<div class="weekly-accordion">
 								<div class="panel-group" id="accordion-weekly">
 									<div class="panel panel-default">
@@ -167,42 +161,58 @@
 													href="#collapseWeeklyInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
-										<div id="collapseWeeklyInsp" class="panel-collapse collapse in">
+										<div id="collapseWeeklyInsp"
+											class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> 
-													<span class="work-progress glyphicon glyphicon-unchecked pointer"  markable></span>
-													<span class="taskName">Press Exhaust Parameters</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+													<span class="notes glyphicon glyphicon-comment"></span> <span
+														class="work-progress glyphicon glyphicon-unchecked pointer"
+														markable></span> <span class="taskName">Press
+														Exhaust Parameters</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Ink Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Ink
+														Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span> 
-														<span class="taskName">BA Print Bars for Leaks</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">BA Print
+														Bars for Leaks</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Vent Lines for Blockages </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Vent Lines
+														for Blockages </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">IDS Ink Trap </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">IDS Ink
+														Trap </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -218,24 +228,33 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Bottom of the Print Bars and Check Cap Plates </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Bottom of
+														the Print Bars and Check Cap Plates </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Antistatic Bar</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Antistatic
+														Bar</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">IDS Ink Trap </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">IDS Ink
+														Trap </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -244,31 +263,15 @@
 							</div>
 						</div>
 						<div id="subtab3" class="tab-pane">
-						<!-- <p class= "linking">
-        <a class="btn btn-info btn-lg" ng-click="show_month_cs=true">Cleaning Station
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" ng-click="show_month_cr=true"> Charge Roller
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseMonthlyInsp')">Heating and Ventilation
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseMonthlyInsp')">Impression Drum
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        
-      </p>  -->
-      
-      
-      <div id="crumbs">
-        <ul>
-                <li><a href="#1">Cleaning Station</a></li>
-                <li><a href="#2">Charge Roller</a></li>
-                <li><a href="#3">Heating and Ventilation</a></li>
-                <li><a href="#4">Impression Drum</a></li>
-        </ul>
-</div>
+							
+							<div id="crumbs">
+								<ul>
+									<li><a href="#1">Cleaning Station</a></li>
+									<li><a href="#2">Charge Roller</a></li>
+									<li><a href="#3">Heating and Ventilation</a></li>
+									<li><a href="#4">Impression Drum</a></li>
+								</ul>
+							</div>
 							<div class="monthly-accordion">
 								<div class="panel-group" id="accordion-monthly">
 									<div class="panel panel-default">
@@ -278,56 +281,77 @@
 													href="#collapseMonthlyInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
-										<div id="collapseMonthlyInsp" class="panel-collapse collapse in">
+										<div id="collapseMonthlyInsp"
+											class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Rollers </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Rollers </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Nip Rollers </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Nip Rollers
+													</span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">IPC Rollers, and Line Light</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">IPC
+														Rollers, and Line Light</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Dryer Chamber</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Dryer
+														Chamber</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span> 
-														<span class="taskName">BA Aerosol Duct </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">BA Aerosol
+														Duct </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Aerosol Filter and Housing </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Aerosol
+														Filter and Housing </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">DFE Rack for Component Warnings</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">DFE Rack
+														for Component Warnings</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -343,59 +367,82 @@
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Rollers</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Rollers</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Nip Rollers</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Nip Rollers</span>
+													<span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">IPC Rollers, and Line Light</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">IPC
+														Rollers, and Line Light</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Dryer Chamber</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Dryer
+														Chamber</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span> 
-														<span class="taskName">BA Aerosol Duct </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">BA Aerosol
+														Duct </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Aerosol Filter and Housing</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Aerosol
+														Filter and Housing</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Air Filters </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Air Filters
+													</span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Rollers to Remove Oil from Bearings</span> <span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Rollers to
+														Remove Oil from Bearings</span> <span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -404,29 +451,15 @@
 							</div>
 						</div>
 						<div id="subtab4" class="tab-pane">
-					<!-- 	<p class= "linking">
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Cleaning Station
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')"> Charge Roller
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Heating and Ventilation
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Impression Drum
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        
-      </p> -->
-      <div id="crumbs">
-        <ul>
-                <li><a href="#1">Cleaning Station</a></li>
-                <li><a href="#2">Charge Roller</a></li>
-                <li><a href="#3">Heating and Ventilation</a></li>
-                <li><a href="#4">Impression Drum</a></li>
-        </ul>
-		</div> 
+							
+							<div id="crumbs">
+								<ul>
+									<li><a href="#1">Cleaning Station</a></li>
+									<li><a href="#2">Charge Roller</a></li>
+									<li><a href="#3">Heating and Ventilation</a></li>
+									<li><a href="#4">Impression Drum</a></li>
+								</ul>
+							</div>
 							<div class="annual-accordion">
 								<div class="panel-group" id="accordion-yearly">
 									<div class="panel panel-default">
@@ -436,14 +469,18 @@
 													href="#collapseAnnualInsp"><b>Inspect</b></a>
 											</h4>
 										</div>
-										<div id="collapseAnnualInsp" class="panel-collapse collapse in">
+										<div id="collapseAnnualInsp"
+											class="panel-collapse collapse in">
 											<div class="panel-body">
 												<p>
 													<span class="notes glyphicon glyphicon-comment"></span> <span
-														class="work-progress glyphicon glyphicon-unchecked  pointer"  markable></span>
-													<span class="taskName">Corrosion and remove it </span><span
-														class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> <span
-														class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('5678')"></span>
+														class="work-progress glyphicon glyphicon-unchecked  pointer"
+														markable></span> <span class="taskName">Corrosion
+														and remove it </span><span
+														class="video glyphicon glyphicon-facetime-video pointer"
+														ng-click="showVideoModal('123')"></span> <span
+														class="help glyphicon glyphicon-exclamation-sign pointer"
+														ng-click="showhelpModal('5678')"></span>
 												</p>
 											</div>
 										</div>
@@ -467,24 +504,23 @@
 	function changeTab(tabId) {
 		$('.tab-content > div').removeClass('active');
 		$('.nav-tabs > li').removeClass('active');
-		$('#'+tabId).addClass('active');
-		$('#link'+tabId).addClass('active');
-		if(tabId === 'tab1'){
+		$('#' + tabId).addClass('active');
+		$('#link' + tabId).addClass('active');
+		if (tabId === 'tab1') {
 			changeSubTab('subtab1');
 		}
 	};
-	
-	function changeSubTab(subTabId){
+
+	function changeSubTab(subTabId) {
 		$('.tab-content > .tab-content > div').removeClass('active');
 		$('.tab-content >#tab1 >.nav-tabs >li').removeClass('active');
-		$('#'+subTabId).addClass('active');
-		$('#link'+subTabId).addClass('active');
+		$('#' + subTabId).addClass('active');
+		$('#link' + subTabId).addClass('active');
 	};
-	
-	function listJobs(subtab){
+
+	function listJobs(subtab) {
 		/* $('#'+subtab).load("/dashboard/check_"+subtab+".html"); */
-		$('#'+subtab).load("/dashboard/check_"+subtab+".html");
-	  };
-	
+		$('#' + subtab).load("/dashboard/check_" + subtab + ".html");
+	};
 </script>
 
