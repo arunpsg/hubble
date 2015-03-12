@@ -66,9 +66,50 @@
 						<iframe class="help-tab" src="http://www8.hp.com/us/en/privacy/terms-of-use.html"></iframe>
 					</div>
 					<div class="tab-content">
+						<div class="container">
+      					
+    </div>
 						<div id="subtab1" class="tab-pane active">
-							<br>
-							<div class="daily-accordion">
+						
+	<!-- 						<p class= "linking">
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Cleaning Station
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')"> Charge Roller
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Heating and Ventilation
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseOne')">Impression Drum
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        
+      </p> 
+	 -->
+	 <my-tabs>
+	 <div id="crumbs">
+	 <ul>
+  		<my-pane title="Cleaning Station">
+           <li><a href="#1" onclick="listJobs('collapseOne')">Cleaning Station</a></li> </my-pane>
+           <my-pane title = "Charge Roller">
+                <li><a href="#2" onclick="listJobs('collapseOne')">Charge Roller</a></li> </my-pane>
+             </my-pane title="Heating and Ventilation">  <li><a href="#3" onclick="listJobs('collapseOne')">Heating and Ventilation</a></li> </my-pane>
+                </my-pane title="Impression Drum" ><li><a href="#4" onclick="listJobs('collapseOne')">Impression Drum</a></li> </my-pane>
+        
+		</div>
+ 
+</my-tabs>
+	 
+	 <div id="crumbs">
+        <ul>
+                <li><a href="#1" onclick="listJobs('collapseOne')">Cleaning Station</a></li>
+                <li><a href="#2" onclick="listJobs('collapseOne')">Charge Roller</a></li>
+                <li><a href="#3" onclick="listJobs('collapseOne')">Heating and Ventilation</a></li>
+                <li><a href="#4" onclick="listJobs('collapseOne')">Impression Drum</a></li>
+        </ul>
+		</div>
+								<div class="daily-accordion">
 								<div class="panel-group" id="accordion">
 									<div class="panel panel-default">
 										<div class="panel-heading">
@@ -94,7 +135,29 @@
 							</div>
 						</div>
 						<div id="subtab2" class="tab-pane">
-						<br>
+		<!-- 				<p class= "linking">
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Cleaning Station
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')"> Charge Roller
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Heating and Ventilation
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseWeeklyInsp')">Impression Drum
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        
+      </p>  -->
+      <div id="crumbs">
+        <ul>
+                <li><a href="#1" onclick="listJobs('collapseWeeklyInsp')">Cleaning Station</a></li>
+                <li><a href="#2" onclick="listJobs('collapseWeeklyInsp')">Charge Roller</a></li>
+                <li><a href="#3" onclick="listJobs('collapseWeeklyInsp')">Heating and Ventilation</a></li>
+                <li><a href="#4" onclick="listJobs('collapseWeeklyInsp')">Impression Drum</a></li>
+        </ul>
+	</div>
 							<div class="weekly-accordion">
 								<div class="panel-group" id="accordion-weekly">
 									<div class="panel panel-default">
@@ -181,7 +244,31 @@
 							</div>
 						</div>
 						<div id="subtab3" class="tab-pane">
-						<br>
+						<!-- <p class= "linking">
+        <a class="btn btn-info btn-lg" ng-click="show_month_cs=true">Cleaning Station
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" ng-click="show_month_cr=true"> Charge Roller
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseMonthlyInsp')">Heating and Ventilation
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseMonthlyInsp')">Impression Drum
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        
+      </p>  -->
+      
+      
+      <div id="crumbs">
+        <ul>
+                <li><a href="#1">Cleaning Station</a></li>
+                <li><a href="#2">Charge Roller</a></li>
+                <li><a href="#3">Heating and Ventilation</a></li>
+                <li><a href="#4">Impression Drum</a></li>
+        </ul>
+</div>
 							<div class="monthly-accordion">
 								<div class="panel-group" id="accordion-monthly">
 									<div class="panel panel-default">
@@ -317,7 +404,29 @@
 							</div>
 						</div>
 						<div id="subtab4" class="tab-pane">
-						<br>
+					<!-- 	<p class= "linking">
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Cleaning Station
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')"> Charge Roller
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Heating and Ventilation
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-info btn-lg" onclick="listJobs('collapseAnnualInsp')">Impression Drum
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        
+      </p> -->
+      <div id="crumbs">
+        <ul>
+                <li><a href="#1">Cleaning Station</a></li>
+                <li><a href="#2">Charge Roller</a></li>
+                <li><a href="#3">Heating and Ventilation</a></li>
+                <li><a href="#4">Impression Drum</a></li>
+        </ul>
+		</div> 
 							<div class="annual-accordion">
 								<div class="panel-group" id="accordion-yearly">
 									<div class="panel panel-default">
@@ -370,6 +479,12 @@
 		$('.tab-content >#tab1 >.nav-tabs >li').removeClass('active');
 		$('#'+subTabId).addClass('active');
 		$('#link'+subTabId).addClass('active');
-	}
+	};
+	
+	function listJobs(subtab){
+		/* $('#'+subtab).load("/dashboard/check_"+subtab+".html"); */
+		$('#'+subtab).load("/dashboard/check_"+subtab+".html");
+	  };
+	
 </script>
 

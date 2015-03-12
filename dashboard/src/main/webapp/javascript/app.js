@@ -99,6 +99,92 @@ app.directive("helpcontent", function() {
 	};
 });
 
+app.directive("checkCollapseAnnualInsp", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseAnnualInsp.html'
+	};
+});
+app.directive("checkCollapseMonthlyInspCr", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseMonthlyInsp_cr.html'
+	};
+});
+app.directive("checkCollapseMonthlyInspCs", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseMonthlyInsp_cs.html'
+	};
+});
+app.directive("checkCollapseMonthlyInspHv", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseMonthlyInsp_hv.html'
+	};
+});
+app.directive("checkCollapseMonthlyInspId", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseMonthlyInsp_id.html'
+	};
+});
+app.directive("checkCollapseWeeklyInsp", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseWeeklyInsp.html'
+	};
+});
+app.directive("checkCollapseOne", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/check_collapseOne.html'
+	};
+});
+
+
+
+angular.module('docsTabsExample', [])
+.directive('myTabs', function() {
+  return {
+    restrict: 'E',
+    transclude: true,
+    scope: {},
+    controller: function($scope) {
+      var panes = $scope.panes = [];
+
+      $scope.select = function(pane) {
+        angular.forEach(panes, function(pane) {
+          pane.selected = false;
+        });
+        pane.selected = true;
+      };
+
+      this.addPane = function(pane) {
+        if (panes.length === 0) {
+          $scope.select(pane);
+        }
+        panes.push(pane);
+      };
+    },
+    templateUrl: 'my-tabs.html'
+  };
+})
+.directive('myPane', function() {
+  return {
+    require: '^myTabs',
+    restrict: 'E',
+    transclude: true,
+    scope: {
+      title: '@'
+    },
+    link: function(scope, element, attrs, tabsCtrl) {
+      tabsCtrl.addPane(scope);
+    },
+    templateUrl: 'my-pane.html'
+  };
+});});
+
 
 
 app.directive(
