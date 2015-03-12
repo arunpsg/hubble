@@ -42,6 +42,7 @@
 					<li id="linktab1" class="active" onclick="changeTab('tab1')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Maintenance Routines</a></li>
 					<li id="linktab2" onclick="changeTab('tab2')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Print Quality Assist</a></li>
 					<li id="linktab3" onclick="changeTab('tab3')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span>Advanced Diagnostics</a></li>
+					<li id="linktab4" onclick="changeTab('tab4')"><a class="boldfont"><span class="tab-image glyphicon glyphicon-th-list"></span> Context Sensitive Help</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="tab1" class="tab-pane active">
@@ -60,6 +61,9 @@
 					<div id="tab3" class="tab-pane">
 						<br>
 							<p>Page under construction</p>
+					</div>
+					<div id="tab4" class="tab-pane">
+						<iframe class="help-tab" src="http://www8.hp.com/us/en/privacy/terms-of-use.html"></iframe>
 					</div>
 					<div class="tab-content">
 						<div id="subtab1" class="tab-pane active">
@@ -81,7 +85,7 @@
 													<span class="work-progress glyphicon glyphicon-check pointer"  markable></span>
 													<span class="taskName">IDS and Web Wipe Cassettes</span> 
 													<span class="video glyphicon glyphicon-facetime-video pointer" ng-click="showVideoModal('123')"></span> 
-													<span class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('http://www.google.com')"></span>
+													<span class="help glyphicon glyphicon-exclamation-sign pointer" ng-click="showhelpModal('content 1')"></span>
 												</p>
 											</div>
 										</div>
