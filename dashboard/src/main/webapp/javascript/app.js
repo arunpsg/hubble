@@ -7,6 +7,11 @@ var app = angular.module('formApp', []);
 
 app.controller('dashController', [ '$scope', function($scope) {
 
+	
+	$scope.helpUrl='http://www8.hp.com/us/en/privacy/terms-of-use.html';
+	$scope.video = 'QWnXDZ7Ca4k';
+	
+	
 	$scope.alertMe = function(cnt){
 		alert(cnt);
 		console.log(cnt);
@@ -22,17 +27,35 @@ app.controller('dashController', [ '$scope', function($scope) {
 	
 	$scope.showVideoModal = function (videoUrl){
 		$scope.showVideo = true;
-		$scope.videoId = videoUrl;
+		$scope.videoId = $scope.video;
+		$scope.videoCtrl('helpVideo', 'startVideo');
 	}
 	
 	
+	$scope.stopVideo = function(attId){
+		$scope.showVideo = false;
+		$scope.videoId = '';
+		$scope.videoCtrl(attId, 'stopVideo');
+	}
+	
+	$scope.videoCtrl = function(id, cmd) {
+		if ($('#' + id)[0]) {
+			$('#' + id)[0].contentWindow.postMessage(
+					'{"event":"command","func":"' + cmd
+							+ '","args":""}', '*');
+		} else {
+		}
+	};
+	
 	$scope.showHelp = false;
 	$scope.helpFile = '';
-	
-	
-	$scope.showhelpModal = function (videoUrl){
+	$scope.showhelpModal = function (att){
 		$scope.showHelp = true;
-		$scope.helpFile = videoUrl;
+		$scope.helpFile = $scope.helpUrl;
+	}
+	$scope.hidehelpModal = function (){
+		$scope.showHelp = false;
+		$scope.helpFile = '';
 	}
 	
 	
@@ -75,3 +98,55 @@ app.directive("helpcontent", function() {
 		templateUrl : '/dashboard/modals/help.html'
 	};
 });
+
+
+
+app.directive(
+		'playvideo',
+		function($sce, $location) {
+			return {
+				restrict : 'EA',
+				scope : {
+					video : '=',
+					myid : '@',
+					width : '@',
+					height : '@',
+				},
+				replace : true,
+				template : '<iframe id="{{myid}}"  width="{{width}}" height="{{height}}" src="{{url}}" frameborder="0" ></iframe>',
+				link : function(scope) {
+					var id = scope.myid;
+
+					scope.$watch( 'video',
+									function(newVal) {
+										if (newVal) {
+											scope.url = $sce
+													.trustAsResourceUrl('https://www.youtube.com/embed/'+newVal+'?autoplay=1&enablejsapi=1&version=3&wmode=transparent&rel=0&playerapiid=ytplayer&controls=2&showinfo=1&autohide=1&origin=');
+										}
+										else{
+											scope.url = '';
+										}
+									});
+
+				}
+			};
+		});
+app.directive(
+		'helpdir',
+		function($sce, $location) {
+			return {
+				restrict : 'EA',
+				scope:{
+					hlpcntent:'='
+				},
+				replace : true,
+				template : '<iframe  width="100%" height="100%" src="{{targetHlpUrl}}" frameborder="0" ></iframe>',
+				link : function(scope){
+					scope.$watch('hlpcntent',function(newval){
+						scope.targetHlpUrl =$sce
+						.trustAsResourceUrl( newval);
+					});
+				}
+			};
+		});
+
