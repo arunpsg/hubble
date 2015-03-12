@@ -135,21 +135,21 @@ width:100%;
 		#crumbs ul li a {
 			display: block;
 			float: left;
-			height: 50px;
+			height: 40px;
 			background: #3498db;
 			text-align: center;
 			padding: 10px 22px 0 73px;
 			position: relative;
 			margin: 7px 2px -3px; 
 			
-			font-size: 20px;
+			font-size: 14px;
 			text-decoration: none;
 			color: #fff;
 		}
 			#crumbs ul li a:after {
-				border-bottom: 28px solid transparent;
-    			border-left: 25px solid #3498db;
-    			border-top: 24px solid transparent;
+				border-bottom: 20px solid transparent;
+    			border-left: 24px solid #3498db;
+    			border-top: 20px solid transparent;
     			content: "";
 			    position: absolute;
     			right: -23px;
@@ -157,13 +157,13 @@ width:100%;
     			z-index: 1;			}
 			
 			#crumbs ul li a:before {
-				border-bottom: 25px solid transparent;
-    			border-left: 23px solid #d4f2ff;
-    			border-top: 25px solid transparent;
+				border-bottom: 20px solid transparent;
+    			border-left: 26px solid #d4f2ff;
+    			border-top: 23px solid transparent;
     			content: "";
     			left: -1px;
     			position: absolute;
-    			top: 0;
+    			top: -1px;
 			}
 	
 				#crumbs ul li:first-child a {
