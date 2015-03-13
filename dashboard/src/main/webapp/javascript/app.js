@@ -51,7 +51,8 @@ app.controller('dashController', [ '$scope', function($scope) {
 	$scope.helpFile = '';
 	$scope.showhelpModal = function (att){
 		$scope.showHelp = true;
-		$scope.helpFile = $scope.helpUrl;
+//		$scope.helpFile = $scope.helpUrl;
+		$scope.helpFile = att;
 	}
 	$scope.hidehelpModal = function (){
 		$scope.showHelp = false;
@@ -194,7 +195,11 @@ app.directive(
 					hlpcntent:'='
 				},
 				replace : true,
-				template : '<iframe  width="100%" height="100%" src="{{targetHlpUrl}}" frameborder="0" ></iframe>',
+//				template : '<iframe  width="100%" height="100%" src="{{targetHlpUrl}}" frameborder="0" ></iframe>',
+				template:'<div id="pdf" style="width:100%;height:100%;"> <object width="100%" height="100%" type="application/pdf" data="{{targetHlpUrl}}?#zoom=100&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">' 
+					+'<p>OOPS!!There is some error!!</p>'
+				  +'</object></div>',
+				
 				link : function(scope){
 					scope.$watch('hlpcntent',function(newval){
 						scope.targetHlpUrl =$sce
