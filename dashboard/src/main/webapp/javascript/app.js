@@ -59,6 +59,31 @@ app.controller('dashController', [ '$scope', function($scope) {
 		$scope.helpFile = '';
 	}
 	
+	 $scope.toggleClick11 = function () {
+		 $scope.toggleList12 = false;
+		 $scope.toggleList13 = false;
+		 $scope.toggleList14 = false;
+         return $scope.toggleList11 = true;
+     }
+
+     $scope.toggleClick12 = function () {
+    	 $scope.toggleList11 = false;
+		 $scope.toggleList14 = false;
+		 $scope.toggleList13 = false;
+         return $scope.toggleList12 = true;
+     }
+     $scope.toggleClick13 = function () {
+    	 $scope.toggleList11 = false;
+		 $scope.toggleList12 = false;
+		 $scope.toggleList14 = false;
+         return $scope.toggleList13 = true;
+     }
+     $scope.toggleClick14 = function () {
+    	 $scope.toggleList12 = false;
+		 $scope.toggleList13 = false;
+		 $scope.toggleList11 = false;
+         return $scope.toggleList14 = true;
+     }
 	
 } ]);
 
@@ -96,6 +121,9 @@ app.directive("markable", function() {
     
     
 });
+
+
+
 
 app.directive("videocontent", function() {
 	return {
