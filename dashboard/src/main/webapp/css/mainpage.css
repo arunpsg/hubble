@@ -100,6 +100,9 @@
 .displayRed{
 	color : red;
 }
+.toggleAccordion{
+	margin-left:1%;
+}
 /*-------footer -----*/
 .footer {
 	color: #5a5a5a;
