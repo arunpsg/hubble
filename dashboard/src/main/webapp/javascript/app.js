@@ -59,6 +59,8 @@ app.controller('dashController', [ '$scope', function($scope) {
 		$scope.helpFile = '';
 	}
 	
+	$scope.toggleList11 = true;
+	
 	 $scope.toggleClick11 = function () {
 		 $scope.toggleList12 = false;
 		 $scope.toggleList13 = false;
