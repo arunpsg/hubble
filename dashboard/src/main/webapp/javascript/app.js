@@ -48,15 +48,21 @@ app.controller('dashController', [ '$scope', function($scope) {
 	};
 	
 	$scope.showHelp = false;
+	$scope.showComments = false;
 	$scope.helpFile = '';
 	$scope.showhelpModal = function (att){
 		$scope.showHelp = true;
 //		$scope.helpFile = $scope.helpUrl;
 		$scope.helpFile = att;
 	}
+	$scope.showCommentsModal = function(modalUrl){
+		$scope.showComments = true;
+	}
+	
 	$scope.hidehelpModal = function (){
 		$scope.showHelp = false;
 		$scope.helpFile = '';
+		$scope.showComments = false;
 	}
 	
 	$scope.toggleList11 = true;
@@ -92,9 +98,6 @@ app.controller('dashController', [ '$scope', function($scope) {
 app.directive("markable", function() {
     return {
         link: function(scope, elem, attrs) {
-        	
-        	 
-        	
             elem.on("click", function() {
             	
             	if(elem.hasClass('toggleColor')){
@@ -120,8 +123,6 @@ app.directive("markable", function() {
             });
         }
     };
-    
-    
 });
 
 
@@ -181,6 +182,12 @@ app.directive("checkCollapseOne", function(){
 	return{
 		restrict : 'A',
 		templateUrl: '/dashboard/check_collapseOne.html'
+	};
+});
+app.directive("comments", function(){
+	return{
+		restrict : 'A',
+		templateUrl: '/dashboard/modals/comment.html'
 	};
 });
 

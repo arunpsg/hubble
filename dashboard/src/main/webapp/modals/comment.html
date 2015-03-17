@@ -1,0 +1,45 @@
+<!-- Modal -->
+<div class="modal show" id="myModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog wdht50">
+		<div class="modal-content wdht50">
+			<div class="modal-header video-header">
+				<button type="button" class="close close-button"
+					data-dismiss="modal" aria-label="Close" ng-click="hidehelpModal()">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body wdht50">
+				<div>
+					<div class="column one pull-left">
+						<label for="userName" class="">User Name</label> <input
+							type="text" required="required" name="userName"
+							class="validator text-validator inputfld width-131">
+					</div>
+					<div class="pull-right">
+						<label for="category" class="">Category</label> <select
+							name="category" required="required"
+							class="selectinput unfill wd70 select">
+							<option value="operator" selected="selected">Operator</option>
+							<option value="maintenance">Maintenance</option>
+						</select>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="column one pull-left">
+						<label for="description" class="">Description:</label>
+						<textarea name="description" rows="4" cols="65">
+						</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="comments-btns">
+					<button class="btn-cancel" ng-click="hidehelpModal()" >Cancel</button>
+					<button class="btn-add" ng-click="hidehelpModal()">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

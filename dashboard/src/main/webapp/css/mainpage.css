@@ -88,10 +88,28 @@
 	background-color: "#f5f5f5";
 }
 
+.wdht50 {
+	height: 70% !important;
+	width: 70% !important;
+	background-color: "#f5f5f5";
+}
+
+.column.one{
+	margin-left:15%;
+}
+
+.comments-btns{
+	text-align : center !important;
+}
+
 .close-button {
 	font-size: 59px !important;
 	font-weight: bolder !important;
 	line-height: 0.5;
+}
+
+.btn-add {
+    margin-left: 9% !important;
 }
 
 .video-header {
