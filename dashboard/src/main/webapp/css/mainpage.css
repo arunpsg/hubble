@@ -239,3 +239,12 @@
 #crumbs ul li a:hover:before {
 	border-left-color: #400040;
 }
+
+
+.tog >span:BEFORE{
+	content:"\e114";
+}
+
+.tog.collapsed > span:BEFORE{
+	content:"\e080";
+}
