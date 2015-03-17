@@ -32,6 +32,7 @@
 
 	<div ng-show="showVideo" videocontent></div>
 	<div ng-show="showHelp" helpcontent></div>
+	<div ng-show="showComments" comments></div>
 
 
 	<div id="hubble" class="hubble">
@@ -111,7 +112,7 @@
 										<div id="collapseOne" class="panel-collapse collapse in">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">IDS and Web
 														Wipe Cassettes</span> <span
@@ -123,7 +124,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12" >
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">IDS and Web
 														Wipe Cassettes</span> <span
@@ -135,7 +136,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13" >
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">IDS and Web
 														Wipe Cassettes</span> <span
@@ -147,7 +148,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14" >
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">IDS and Web
 														Wipe Cassettes</span> <span
@@ -189,7 +190,7 @@
 											class="panel-collapse collapse in">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">Press
 														Exhaust Parameters</span> <span
@@ -199,7 +200,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.1. Inspect Press Exhaust Parameters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Ink
 														Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
@@ -209,7 +210,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.2. Inspect Ink Delivery System (IDS) Ink Pressures with Pumps Off.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Print
 														Bars for Leaks</span> <span
@@ -219,7 +220,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.3. Inspect BA Print Bars for Leaks.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Vent Lines
 														for Blockages </span><span
@@ -229,7 +230,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.6. Inspect Vent Lines for Blockages.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -241,7 +242,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">Press
 														Exhaust Parameters</span> <span
@@ -251,7 +252,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.1. Inspect Press Exhaust Parameters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Ink
 														Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
@@ -261,7 +262,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.2. Inspect Ink Delivery System (IDS) Ink Pressures with Pumps Off.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Print
 														Bars for Leaks</span> <span
@@ -271,7 +272,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.3. Inspect BA Print Bars for Leaks.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Vent Lines
 														for Blockages </span><span
@@ -281,7 +282,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.6. Inspect Vent Lines for Blockages.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -293,7 +294,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">Press
 														Exhaust Parameters</span> <span
@@ -303,7 +304,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.1. Inspect Press Exhaust Parameters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()" pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Ink
 														Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
@@ -313,7 +314,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.2. Inspect Ink Delivery System (IDS) Ink Pressures with Pumps Off.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Print
 														Bars for Leaks</span> <span
@@ -323,7 +324,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.3. Inspect BA Print Bars for Leaks.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Vent Lines
 														for Blockages </span><span
@@ -333,7 +334,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.6. Inspect Vent Lines for Blockages.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -345,7 +346,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked pointer"
 														markable></span> <span class="taskName">Press
 														Exhaust Parameters</span> <span
@@ -355,7 +356,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.1. Inspect Press Exhaust Parameters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Ink
 														Delivery System (IDS) Ink Pressures with Pumps Off</span> <span
@@ -365,7 +366,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.2. Inspect Ink Delivery System (IDS) Ink Pressures with Pumps Off.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Print
 														Bars for Leaks</span> <span
@@ -375,7 +376,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.3. Inspect BA Print Bars for Leaks.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Vent Lines
 														for Blockages </span><span
@@ -385,7 +386,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.6. Inspect Vent Lines for Blockages.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -407,7 +408,7 @@
 										<div id="collapseWeeklyClean" class="panel-collapse collapse">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Bottom of
 														the Print Bars and Check Cap Plates </span><span
@@ -417,7 +418,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.4. Clean the Bottom of the Print Bars and Check Cap Plates.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Antistatic
 														Bar</span> <span
@@ -427,7 +428,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.5. Clean Antistatic Bar.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -439,7 +440,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Bottom of
 														the Print Bars and Check Cap Plates </span><span
@@ -449,7 +450,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.4. Clean the Bottom of the Print Bars and Check Cap Plates.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Antistatic
 														Bar</span> <span
@@ -459,7 +460,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.5. Clean Antistatic Bar.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -471,7 +472,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Bottom of
 														the Print Bars and Check Cap Plates </span><span
@@ -481,7 +482,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.4. Clean the Bottom of the Print Bars and Check Cap Plates.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Antistatic
 														Bar</span> <span
@@ -491,7 +492,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.5. Clean Antistatic Bar.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -503,7 +504,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Bottom of
 														the Print Bars and Check Cap Plates </span><span
@@ -513,7 +514,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.4. Clean the Bottom of the Print Bars and Check Cap Plates.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Antistatic
 														Bar</span> <span
@@ -523,7 +524,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/2_Weekly/3.2.5. Clean Antistatic Bar.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IDS Ink
 														Trap </span><span
@@ -561,7 +562,7 @@
 											class="panel-collapse collapse in">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers </span><span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -570,7 +571,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers
 													</span><span
@@ -580,7 +581,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -590,7 +591,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -600,7 +601,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -610,7 +611,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing </span><span
@@ -620,7 +621,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">DFE Rack
 														for Component Warnings</span> <span
@@ -632,7 +633,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers </span><span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -641,7 +642,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers
 													</span><span
@@ -651,7 +652,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -661,7 +662,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -671,7 +672,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -681,7 +682,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing </span><span
@@ -691,7 +692,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">DFE Rack
 														for Component Warnings</span> <span
@@ -703,7 +704,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers </span><span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -712,7 +713,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers
 													</span><span
@@ -722,7 +723,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -732,7 +733,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -742,7 +743,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -752,7 +753,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing </span><span
@@ -762,7 +763,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">DFE Rack
 														for Component Warnings</span> <span
@@ -774,7 +775,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers </span><span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -783,7 +784,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers
 													</span><span
@@ -793,7 +794,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -803,7 +804,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -813,7 +814,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -823,7 +824,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing </span><span
@@ -833,7 +834,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">DFE Rack
 														for Component Warnings</span> <span
@@ -856,7 +857,7 @@
 										<div id="collapseMonthlyClean" class="panel-collapse collapse">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers</span> <span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -865,7 +866,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers</span>
 													<span
@@ -875,7 +876,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -885,7 +886,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -895,7 +896,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -905,7 +906,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing</span> <span
@@ -915,7 +916,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Air Filters
 													</span><span
@@ -925,7 +926,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.8. Clean Air Filters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers to
 														Remove Oil from Bearings</span> <span
@@ -937,7 +938,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers</span> <span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -946,7 +947,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers</span>
 													<span
@@ -956,7 +957,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -966,7 +967,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -976,7 +977,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -986,7 +987,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing</span> <span
@@ -996,7 +997,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Air Filters
 													</span><span
@@ -1006,7 +1007,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.8. Clean Air Filters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers to
 														Remove Oil from Bearings</span> <span
@@ -1018,7 +1019,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers</span> <span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -1027,7 +1028,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.2. Inspect and Clean Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers</span>
 													<span
@@ -1037,7 +1038,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.3. Inspect and Clean Nip Rollers.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -1047,7 +1048,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -1057,7 +1058,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -1067,7 +1068,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing</span> <span
@@ -1077,7 +1078,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.7. Inspect and Clean the Aerosol Filter and Housing.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Air Filters
 													</span><span
@@ -1087,7 +1088,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.8. Clean Air Filters.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers to
 														Remove Oil from Bearings</span> <span
@@ -1099,7 +1100,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers</span> <span
 														class="video glyphicon glyphicon-facetime-video pointer"
@@ -1108,7 +1109,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Nip Rollers</span>
 													<span
@@ -1118,7 +1119,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">IPC
 														Rollers, and Line Light</span> <span
@@ -1128,7 +1129,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Dryer
 														Chamber</span> <span
@@ -1138,7 +1139,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">BA Aerosol
 														Duct </span><span
@@ -1148,7 +1149,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Aerosol
 														Filter and Housing</span> <span
@@ -1158,7 +1159,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Air Filters
 													</span><span
@@ -1168,7 +1169,7 @@
 														ng-click="showhelpModal('5678')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Rollers to
 														Remove Oil from Bearings</span> <span
@@ -1206,7 +1207,7 @@
 											class="panel-collapse collapse in">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Corrosion
 														and remove it </span><span
@@ -1219,7 +1220,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Corrosion
 														and remove it </span><span
@@ -1231,7 +1232,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Corrosion
 														and remove it </span><span
@@ -1243,7 +1244,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer"
 														markable></span> <span class="taskName">Corrosion
 														and remove it </span><span
@@ -1280,7 +1281,7 @@
 											class="panel-collapse collapse in">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment "></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal() "></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Corrosion
 														and remove it </span><span
@@ -1290,7 +1291,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/4_Annual/3.4.1. Inspect for and Remove Corrosion.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">IPC
 														Rollers, and Line Light</span> <span
@@ -1300,7 +1301,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1312,7 +1313,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment "></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal() "></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Corrosion
 														and remove it </span><span
@@ -1322,7 +1323,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/4_Annual/3.4.1. Inspect for and Remove Corrosion.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">IPC
 														Rollers, and Line Light</span> <span
@@ -1332,7 +1333,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1344,7 +1345,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment "></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal() "></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Corrosion
 														and remove it </span><span
@@ -1354,7 +1355,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/4_Annual/3.4.1. Inspect for and Remove Corrosion.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">IPC
 														Rollers, and Line Light</span> <span
@@ -1364,7 +1365,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1376,7 +1377,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment "></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal() "></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Corrosion
 														and remove it </span><span
@@ -1386,7 +1387,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/4_Annual/3.4.1. Inspect for and Remove Corrosion.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">IPC
 														Rollers, and Line Light</span> <span
@@ -1396,7 +1397,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.4. Inspect and Clean IPC Rollers, and Line Light.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1416,7 +1417,7 @@
 											<div id="collapseOverdueClean" class="panel-collapse collapse">
 											<div class="panel-body" ng-show="toggleList11">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1426,7 +1427,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">BA Aerosol
 														Duct </span><span
@@ -1436,7 +1437,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Aerosol
 														Filter and Housing</span> <span
@@ -1448,7 +1449,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList12">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1458,7 +1459,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">BA Aerosol
 														Duct </span><span
@@ -1468,7 +1469,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Aerosol
 														Filter and Housing</span> <span
@@ -1480,7 +1481,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList13">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1490,7 +1491,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">BA Aerosol
 														Duct </span><span
@@ -1500,7 +1501,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Aerosol
 														Filter and Housing</span> <span
@@ -1512,7 +1513,7 @@
 											</div>
 											<div class="panel-body" ng-show="toggleList14">
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Dryer
 														Chamber</span> <span
@@ -1522,7 +1523,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.5. Inspect and Clean Dryer Chamber.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">BA Aerosol
 														Duct </span><span
@@ -1532,7 +1533,7 @@
 														ng-click="showhelpModal('/dashboard/helpcontent/3_Monthly/3.3.6. Inspect and Clean the BA Aerosol Duct.pdf')"></span>
 												</p>
 												<p>
-													<span class="notes glyphicon glyphicon-comment"></span> <span
+													<span class="notes glyphicon glyphicon-comment pointer" ng-click="showCommentsModal()"></span> <span
 														class="work-progress glyphicon glyphicon-unchecked  pointer displayRed"
 														markable></span> <span class="taskName displayRed">Aerosol
 														Filter and Housing</span> <span
