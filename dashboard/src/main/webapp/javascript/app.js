@@ -71,6 +71,7 @@ app.controller('dashController', [ '$scope', function($scope) {
 		 $scope.toggleList12 = false;
 		 $scope.toggleList13 = false;
 		 $scope.toggleList14 = false;
+		 $scope.toggleList15 = false;
          return $scope.toggleList11 = true;
      }
 
@@ -78,19 +79,29 @@ app.controller('dashController', [ '$scope', function($scope) {
     	 $scope.toggleList11 = false;
 		 $scope.toggleList14 = false;
 		 $scope.toggleList13 = false;
+		 $scope.toggleList15 = false;
          return $scope.toggleList12 = true;
      }
      $scope.toggleClick13 = function () {
     	 $scope.toggleList11 = false;
 		 $scope.toggleList12 = false;
 		 $scope.toggleList14 = false;
+		 $scope.toggleList15 = false;
          return $scope.toggleList13 = true;
      }
      $scope.toggleClick14 = function () {
     	 $scope.toggleList12 = false;
 		 $scope.toggleList13 = false;
 		 $scope.toggleList11 = false;
+		 $scope.toggleList15 = false;
          return $scope.toggleList14 = true;
+     }
+     $scope.toggleClick15 = function () {
+    	 $scope.toggleList12 = false;
+		 $scope.toggleList13 = false;
+		 $scope.toggleList11 = false;
+		 $scope.toggleList14 = false;
+         return $scope.toggleList15 = true;
      }
 	
 } ]);

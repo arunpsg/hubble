@@ -240,6 +240,12 @@
 	border-left-color: #400040;
 }
 
+#crumbs ul li a:focus { color: #ff0000;
+background: #8cc6ff;
+ }
+ #crumbs ul li a:focus:after{ color: #ff0000;
+border-left-color: #8cc6ff;
+ }
 
 .tog >span:BEFORE{
 	content:"\e114";
