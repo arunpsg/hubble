@@ -10,7 +10,7 @@ app.controller('dashController', [ '$scope', function($scope) {
 	
 	$scope.helpUrl='http://www8.hp.com/us/en/privacy/terms-of-use.html';
 	$scope.video = 'QWnXDZ7Ca4k';
-	
+	$scope.troubleshootUrl = 'troubleshoot.html';
 	
 	$scope.alertMe = function(cnt){
 		alert(cnt);

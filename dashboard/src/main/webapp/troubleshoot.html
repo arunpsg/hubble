@@ -1,0 +1,145 @@
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsetroub">
+          Unintended Ink on Output
+        </a><i class="indicator glyphicon glyphicon-chevron-down  "></i>
+      </h4>
+    </div>
+    <div id="collapsetroub" class="panel-collapse collapse in">
+      <div class="panel-body">
+       
+					<div id="myCarousel1" class="carousel slide" data-interval="false">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/3.1_DipsorStreaks.pdf')">
+									<img class="carouselimg" src="/dashboard/images/troubleshoot/3.1 dips and streak.png"></img>
+								</div>
+							</div>
+							<div class="item">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/3.2UnintendedInk.pdf')">
+									<img class="carouselimg" src="/dashboard/images/troubleshoot/3.2 Unintended Ink After Press Idle Time.png"></img>
+								</div>
+							</div>
+							<div class="item">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/3.3PrintedSmearing.pdf')">
+									<img class="carouselimg" src="/dashboard/images/troubleshoot/3.3 Printed Content Smearing.png"></img>
+								</div>
+							</div>
+						</div>
+
+					<a class="left carousel-control" href="#myCarousel1" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left"></span>
+					</a> <a class="right carousel-control" href="#myCarousel1"
+						role="button" data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+
+				</div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Ink and Media Interactions
+        </a><i class="indicator glyphicon glyphicon-chevron-right  "></i>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+       		
+       		<div id="myCarousel2" class="carousel slide" data-interval="false">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/4.1InkBleed.pdf')">
+									<img class="carouselimg" src="/dashboard/images/troubleshoot/4.1 Ink bleed and wicking.png"></img>
+								</div>
+							</div>
+							<div class="item">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/4.2 Coalescence.pdf')">
+									<img class="carouselimg" src="/dashboard/images/troubleshoot/4.2 Coalescence.png"></img>
+								</div>
+							</div>
+							
+						</div>
+
+					<a class="left carousel-control" href="#myCarousel2" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left"></span>
+					</a> <a class="right carousel-control" href="#myCarousel2"
+						role="button" data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+
+				</div>
+       		
+       		
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Downweb Streaking and Banding
+        </a><i class="indicator glyphicon glyphicon-chevron-right "></i>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        		
+        		<div id="myCarousel3" class="carousel slide" data-interval="false">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/5.1 problems nozzle.pdf')">
+									<img class="carouselimg" src="/dashboard//images/troubleshoot/5.1 problems nozzle.png"></img>
+								</div>
+							</div>
+							<div class="item">
+								<div class="carouselcontent" ng-click="showhelpModal('/dashboard/troubleshoot_content/5.2 misalignment.pdf')">
+									<img class="carouselimg" src="/dashboard//images/troubleshoot/5.2 misalignment.png"></img>
+								</div>
+							</div>
+							
+						</div>
+
+					<a class="left carousel-control" href="#myCarousel3" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left"></span>
+					</a> <a class="right carousel-control" href="#myCarousel3"
+						role="button" data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+
+				</div>
+        		
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('glyphicon-chevron-down glyphicon-chevron-right');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);
+
+$(document).ready(function(){
+    $('.carousel').carousel({
+	     interval: 600000
+    });
+});
+
+</script>
