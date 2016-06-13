@@ -1,3 +1,3 @@
 # hubble
 
-Dashboard prototype
+Monitor and schedule task with web dashboard
